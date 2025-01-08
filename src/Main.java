@@ -1,24 +1,25 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
-
+    static int[] arr = new int[30];
     public static void main(String[] args) throws IOException {
+
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
         StringTokenizer st = new StringTokenizer(line);
-        int n = Integer.parseInt(st.nextToken());
+        String word = st.nextToken();
 
-        int cnt = 0;
-        for (int i = 0; i < n; i++) {
-            if (i % 3 == 0 || i % 5 == 0) {
-                cnt += i;
-            }
+        for (int i = 0; i < word.length(); i++) {
+            arr[(int)word.charAt(i) - 'a']++;
         }
-        System.out.println(cnt);
 
+        StringBuilder sb = new StringBuilder();
+        for (int i = 'a'; i <= 'z'; i++) {
+            sb.append(arr[i - 'a']).append(' ');
+        }
+
+        System.out.println(sb.toString());
     }
 }
