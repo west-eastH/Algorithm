@@ -5,6 +5,7 @@ import java.util.*;
 
 //백준 체스판 다시 칠하기 Boj1018
 public class Boj1018 {
+
     static char[][] board;
     static int min = 64;
     static final Boolean BLACK = true;
@@ -29,15 +30,15 @@ public class Boj1018 {
 
         for (int i = 0; i <= h; i++) {
             for (int j = 0; j <= w; j++) {
-                check(i,j, BLACK);
-                check(i,j, WHITE);
+                check(i, j, BLACK);
+                check(i, j, WHITE);
             }
         }
         System.out.println(min);
     }
 
     public static void check(int x, int y, Boolean isBlack) {
-        char a,b;
+        char a, b;
         int sum = 0;
         if (isBlack) {
             a = 'B';
@@ -50,7 +51,7 @@ public class Boj1018 {
             for (int j = y; j < y + 8; j++) {
                 if ((i + j) % 2 == 0 && board[i][j] == a) {
                     sum++;
-                } else if ((i + j) % 2 == 1 && board[i][j] == b){
+                } else if ((i + j) % 2 == 1 && board[i][j] == b) {
                     sum++;
                 }
             }
