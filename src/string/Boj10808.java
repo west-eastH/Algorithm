@@ -1,10 +1,14 @@
+package string;
+
 import java.io.*;
 import java.util.*;
 
-public class Main {
-    static int[] arr = new int[30];
-    public static void main(String[] args) throws IOException {
+//백준 알파벳 개수 10808
+public class Boj10808 {
 
+    static int[] arr = new int[30];
+
+    public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
@@ -12,7 +16,7 @@ public class Main {
         String word = st.nextToken();
 
         for (int i = 0; i < word.length(); i++) {
-            arr[(int)word.charAt(i) - 'a']++;
+            arr[(int) word.charAt(i) - 'a']++;
         }
 
         StringBuilder sb = new StringBuilder();
