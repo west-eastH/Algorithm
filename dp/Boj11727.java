@@ -1,6 +1,7 @@
 package dp;
 
 import java.io.*;
+import java.util.*;
 
 //백준 2xn 타일링 2
 public class Boj11727 {
@@ -9,7 +10,7 @@ public class Boj11727 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
 
-        int[] d = new int[n + 1];
+        int[] d = new int[n + 2];
         d[1] = 1;
         d[2] = 3;
         for (int i = 3; i <= n; i++) {
