@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 
 //백준 회의실 배정 Boj1931
 public class Boj1931 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
@@ -36,7 +37,6 @@ public class Boj1931 {
                 end = arr[i][1];
             }
         }
-
         System.out.println(cnt);
     }
 }
