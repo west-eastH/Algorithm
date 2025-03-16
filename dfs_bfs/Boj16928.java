@@ -1,9 +1,10 @@
-package implementation;
+package dfs_bfs;
 
 import java.io.*;
 import java.util.*;
 
-public class Main {
+//백준 뱀과 사다리 게임 Boj16928
+public class Boj16928 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
