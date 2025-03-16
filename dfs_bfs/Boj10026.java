@@ -1,9 +1,9 @@
-package implementation;
+package dfs_bfs;
 
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Boj10026 {
     static int[] dx = {0, -1, 0, 1};
     static int[] dy = {1, 0, -1, 0};
     static char[][] map;
