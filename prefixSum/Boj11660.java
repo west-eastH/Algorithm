@@ -19,7 +19,8 @@ public class Boj11660 {
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j <= N; j++) {
                 int val = Integer.parseInt(st.nextToken());
-                prefixSum[i][j] = val + prefixSum[i - 1][j] + prefixSum[i][j - 1] - prefixSum[i - 1][j - 1];
+                prefixSum[i][j] =
+                    val + prefixSum[i - 1][j] + prefixSum[i][j - 1] - prefixSum[i - 1][j - 1];
 
             }
         }
@@ -33,8 +34,7 @@ public class Boj11660 {
             int y2 = Integer.parseInt(st.nextToken());
 
             int result =
-                prefixSum[x2][y2] - prefixSum[x2][y1 - 1] - prefixSum[x1 - 1][y2] + prefixSum[x1
-                    - 1][y1 - 1];
+                prefixSum[x2][y2] - prefixSum[x2][y1 - 1] - prefixSum[x1 - 1][y2] + prefixSum[x1 - 1][y1 - 1];
             sb.append(result).append("\n");
         }
 
