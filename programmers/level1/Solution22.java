@@ -1,7 +1,7 @@
 package programmers.level1;
-
 import java.util.*;
 
+//프로그래머스 Level1 명예의 전당 (1)
 class Solution22 {
     public int[] solution(int k, int[] score) {
         List<Integer> answer = new ArrayList<>();

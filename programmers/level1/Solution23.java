@@ -1,5 +1,6 @@
 package programmers.level1;
 
+//프로그래머스 Level1 기사단원의 무기
 class Solution23 {
     public int solution(int number, int limit, int power) {
         int answer = 0;
