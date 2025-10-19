@@ -1,4 +1,4 @@
-package programmers.kit;
+package programmers.kit.hash;
 
 import java.util.*;
 
