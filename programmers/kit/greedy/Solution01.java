@@ -1,6 +1,6 @@
 package programmers.kit.greedy;
 
-class Solution {
+class Solution01 {
     public int solution(String name) {
         int answer = 0;;
         int length = name.length();
@@ -15,14 +15,9 @@ class Solution {
                 next++;
             }
 
-            minMove = Math.min(minMove, java.lang.Math.min(i * 2 + (length - next), (length - next) + i));
+            minMove = Math.min(minMove, java.lang.Math.min(i * 2 + (length - next), (length - next) * 2 + i));
 
         }
         return answer + minMove;
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        System.out.println(solution.solution("JAN"));
     }
 }
