@@ -2,7 +2,7 @@ package programmers.kit.greedy;
 
 import java.util.*;
 
-class Solution {
+class Solution02 {
     public String solution(String number, int k) {
         Stack<Character> stack = new Stack<>();
         StringBuilder sb = new StringBuilder();
